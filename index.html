@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="EN">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Text Processor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="script.js" defer></script>
+</head>
+<body>
+<table>
+    <tr>Text Processor</tr>
+    <tr>
+        <td><textarea id="input" rows="20" cols="80" placeholder="Input text here ..."></textarea></td>
+        <td><textarea id="output" rows="20" cols="80" placeholder="Output text here ..."></textarea></td>
+        <td><textarea id="methods" rows="20" cols="40" readonly>{methods : []}</textarea></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td><label for="setHandler">Process on input:</label></td>
+        <td><input type="checkbox" id="setHandler"></td>
+    </tr>
+    <tr>
+        <td><label for="copy">Copy text:</label></td>
+        <td><input type="checkbox" id="copy"></td>
+    </tr>
+    <tr>
+        <td><label for="repl">Replacement:</label></td>
+        <td><input type="text" id="repl"></input></td>
+    </tr>
+        <td><label for="regex">Regular expression:</label></td>
+        <td><input type="text" id="regex"></input></td>
+    </tr>
+    <tr>
+        <td><label for="global">Global:</label></td>
+        <td><input type="checkbox" id="global"></td>
+    </tr>
+    <tr>
+        <td><label for="caseIns">Case insensitive:</label></td>
+        <td><input type="checkbox" id="caseIns"></td>
+    </tr>
+    <tr>
+        <td><label for="methodNames">Method:</label></td>
+        <td><select id="methodNames"></select></td>
+        <td><input type="button" value="Push method"></td>
+        <td><input type="button" value="Pop method"></td>
+        <td><input type="button" value="Clear methods"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Process"></td>
+    </tr>
+</table>
+</body>
+</html>

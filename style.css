@@ -1,0 +1,67 @@
+:root {
+    --back-color: #333333;
+    --text-color: #CCCCCC;
+    --font: helvetica, sans-serif;
+    --width: 200px;
+    --radius: 5px;
+}
+
+* {
+    font-family: var(--font);
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--back-color);
+    color: var(--text-color);
+}
+
+textarea {
+    background-color: var(--back-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: var(--radius);
+    outline: none;
+    resize: none;
+}
+
+input[type=number], input[type=text], input[type=button], select {
+    background-color: var(--back-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: var(--radius);
+    width: var(--width);
+}
+
+input[type="checkbox"] {
+    background-color: var(--back-color);
+    border: 1px solid var(--text-color);
+    border-radius: var(--radius);
+    width: 16px;
+    height: 16px;
+    margin: 0px 0px 0px 0px;
+    appearance: none;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid var(--text-color);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    left: 4px;
+}
+
+td {
+    width: var(--width);
+}
+
+input[type=button]:hover {
+    background-color: var(--text-color);
+    color: var(--back-color);
+}
